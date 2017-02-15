@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>Frank Reynolds' "Cat Soup" Recipe</title>
+  <meta name="description" content="The best Cat Soup recipe, compliments of Frank Reynolds (It's Always Sunny in Philadelphia), which was freely shared upon learning of the 'Statute of Limitations' from his cab driver!">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css_reset.css" type="text/css">
+  <script type="text/javascript" src="external_javascript_example.js"/>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12345678-9', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body>
   <header>
@@ -29,12 +41,12 @@
     </figcaption>
 
     <a name="description-section"/>
-    <h2>Description</h2>
+    <h2 id="description">Description</h2>
       <p>Cat Soup is a peasant dish primarily consisting of fresh cat (mittens are optional, but preferred), with amputated human appendages often mixed in. This culinary delight was first created by sweatshop mogul, Frank Reynolds, as an inexpensive and readily available mainstay for his Vietnamese sweatshop workers.</p>
 
     <aside>
       <a name="ingredients-section"/>
-      <h2>Ingredients</h2>
+      <h2 id="ingredients">Ingredients</h2>
       <ul>
         <li>1 Full-sized Cat (or 4 kittens)</li>
         <li>4 kitten mittens</li>
@@ -49,7 +61,7 @@
   </section>
 
   <a name="directions-section" />
-  <h2>Directions</h2>
+  <h2 id="directions">Directions</h2>
     <ol>
       <li>
         Begin by heating a large stew pot to boiling (think: "the size of stew pot that Bugs Bunny always finds himself in")
@@ -74,13 +86,12 @@
       </li>
     </ol>
 
-    <section>
-      <a name="reviews-section" />
+    <section id="reviews">
+      <a name="reviews-section"/>
       <h2>Review Your Cat Soup Results!</h2>
-      <form action="/reviews" method="post">
-        <label for="reviewer_name">Name</label>
-        <input id="reviewer_name" type="text">
-        <br>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
 
         <label for="rating">Rating</label>
         1<input type="radio" name="rating" value="1" checked>
@@ -88,31 +99,28 @@
         3<input type="radio" name="rating" value="3">
         4<input type="radio" name="rating" value="4">
         5<input type="radio" name="rating" value="5">
-        <br>
 
-        <label for="cooking_expertise">Cooking Expertise</label>
-        <select name="cooking_expertise">
-          <option disabled="true" selected="true "value="Select Cooking Expertise">Select Cooking Expertise</option>
+        <label for="expertise">Cooking Expertise</label>
+        <select id="expertise" name="expertise">
+          <option disabled="true" selected="true" value="Select Cooking Expertise">Select Cooking Expertise</option>
           <option value="Sometimes Cook">Sometimes Cook</option>
-          <option value="Sometimes Cook">Cook Every Day</option>
-          <option value="Sometimes Cook">Cooking is a Hobby</option>
-          <option value="Sometimes Cook">Professional Chef</option>
+          <option value="Cook Every Day">Cook Every Day</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
         </select>
-        <br>
+
         <label>Review
-          <br>
-          <textarea rows="8" cols="80"></textarea>
+          <textarea id="review" name="review" rows="8" cols="80"></textarea>
         </label>
-        <br>
 
         <input type="submit" value="Submit Review">
       </form>
     </section>
 
-      <footer>
-        <br>
-        As stated above, this recipe was originally created by <a href="http://itsalwayssunny.wikia.com/wiki/Frank_Reynolds">Frank Reynolds</a> (AKA: "Mantis Toboggan", "The Warthog", "Froggy", or "Ongo Goblogian").
-      </footer>
+    <footer>
+
+      As stated above, this recipe was originally created by <a href="http://itsalwayssunny.wikia.com/wiki/Frank_Reynolds">Frank Reynolds</a> (AKA: "Mantis Toboggan", "The Warthog", "Froggy", or "Ongo Goblogian").
+    </footer>
 
   </body>
 </html>
