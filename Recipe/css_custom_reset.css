@@ -1,0 +1,9 @@
+html, body, header, img, nav, ul, li, a, h1, h2, section, figure, figcaption, p,
+aside, ol, form, label, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
