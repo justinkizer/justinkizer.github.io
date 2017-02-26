@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css_custom_reset.css" type="text/css">
   <link rel="stylesheet" href="new_external_stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="custom_grid.css" type="text/css">
   <script type="text/javascript" src="external_javascript_example.js"/>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -30,7 +31,7 @@
     </nav>
   </header>
 
-  <aside>
+  <aside class="col col-1-3">
     <a name="ingredients-section"/>
     <h2 id="ingredients">Ingredients</h2>
     <ul class="ingredients-list">
@@ -45,7 +46,7 @@
     </ul>
   </aside>
 
-  <section>
+  <section class="col col-2-3">
     <h1>Frank Reynolds' "Cat Soup" Recipe</h1>
     <h2>Cat Soup</h2>
     <figure>
@@ -92,8 +93,9 @@
     <section id="reviews">
       <h2>Review Your Cat Soup Results!</h2>
       <form id="review-form" action="/reviews" method="post">
+        <br>
         <label for="name">Name</label>
-        <input id="name" type="text" name="name">
+        <input id="name" type="text" name="name" class="col-1-3">
 
         1<input type="radio" name="rating" value="1" checked>
         2<input type="radio" name="rating" value="2">
@@ -101,14 +103,14 @@
         4<input type="radio" name="rating" value="4">
         5<input type="radio" name="rating" value="5">
 
-        <select id="expertise" name="expertise">
+        <select id="expertise" name="expertise" class="col-1-3">
           <option disabled="true" selected="true" value="Select Cooking Expertise">Select Cooking Expertise</option>
           <option value="Sometimes Cook">Sometimes Cook</option>
           <option value="Cook Every Day">Cook Every Day</option>
           <option value="Cooking is a Hobby">Cooking is a Hobby</option>
           <option value="Professional Chef">Professional Chef</option>
         </select>
-        <label for="review">
+        <label for="review" class="col-2-3">
         <textarea id="review" name="review" rows="8" cols="80"></textarea>
         </label>
         <br>

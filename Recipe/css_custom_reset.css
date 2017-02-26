@@ -7,3 +7,7 @@ aside, ol, form, label, footer {
   font: inherit;
   vertical-align: baseline;
 }
+
+img {
+  width: 100%;
+}
