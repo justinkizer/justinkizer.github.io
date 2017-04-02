@@ -6,8 +6,9 @@ body {
 .canvas-container {
   width: 100%;
   position: absolute;
-  left: 17%;
   top: 12%;
+  display: flex;
+  justify-content: center;
 }
 
 .header-container {
@@ -28,8 +29,8 @@ h1 {
 }
 
 .robo-tapper-canvas {
-  position: absolute;
-  top: 12%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("assets/instructions.png");
   background-size: cover;
   min-height: 600px;
@@ -74,7 +75,7 @@ button:hover {
 .nav-container {
   position: absolute;
   top: 8.5%;
-  left: 0%;
+  left: 0.5%;
   width: 100%;
   display: flex;
   justify-content: center;
