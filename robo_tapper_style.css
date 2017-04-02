@@ -22,7 +22,7 @@ h1 {
   left: 40%;
   color: white;
   font-size: 46px;
-  font-family: 'assets/ARCADECLASSIC.TTF';
+  font-family: 'ARCADECLASSIC';
   padding: 0;
   margin: 0;
 }
@@ -53,7 +53,7 @@ button {
   outline: none;
   color: white;
   font-size: 46px;
-  font-family: 'assets/ARCADECLASSIC.TTF';
+  font-family: 'ARCADECLASSIC';
 }
 
 button:hover {
@@ -61,13 +61,14 @@ button:hover {
 }
 
 @font-face {
-  font-family: 'assets/ARCADECLASSIC.TTF';
+  font-family: 'ARCADECLASSIC';
+    src: local('assets/ARCADECLASSIC.TTF'); /* IE9 Compat Modes */
     src: url('assets/ARCADECLASSIC.TTF'); /* IE9 Compat Modes */
-    src: url('assets/ARCADECLASSIC.TTF?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('assets/ARCADECLASSIC.TTF') format('woff2'), /* Super Modern Browsers */
-    url('assets/ARCADECLASSIC.TTF') format('woff'), /* Pretty Modern Browsers */
-    url('assets/ARCADECLASSIC.TTF')  format('truetype'), /* Safari, Android, iOS */
-    url('assets/ARCADECLASSIC.TTF') format('svg'); /* Legacy iOS */
+    src: local('assets/ARCADECLASSIC.TTF') format('embedded-opentype'), /* IE6-IE8 */
+    local('assets/ARCADECLASSIC.TTF') format('woff2'), /* Super Modern Browsers */
+    local('assets/ARCADECLASSIC.TTF') format('woff'), /* Pretty Modern Browsers */
+    local('assets/ARCADECLASSIC.TTF')  format('truetype'), /* Safari, Android, iOS */
+    local('assets/ARCADECLASSIC.TTF') format('svg'); /* Legacy iOS */
 }
 
 .nav-container {
@@ -93,5 +94,5 @@ nav {
 nav > a {
   color: white;
   font-size: 16px;
-  font-family: 'assets/ARCADECLASSIC.TTF';
+  font-family: 'ARCADECLASSIC';
 }
