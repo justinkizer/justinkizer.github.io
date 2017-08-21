@@ -120,6 +120,8 @@
       width: 101vw;
       display: flex;
       justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .project {
@@ -179,6 +181,18 @@
     .middle {
       position: absolute;
       left: 20% !important;
+    }
+
+    .project-toto strong {
+      position: absolute;
+      top: 19%;
+      left: 34%;
+    }
+
+    .project-toto .description {
+      position: absolute;
+      top: 37%;
+      left: 5%;
     }
 
     .project img {
