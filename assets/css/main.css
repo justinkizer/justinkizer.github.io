@@ -462,6 +462,7 @@
 		text-align: center;
 		top: 0;
 		width: 100%;
+    overflow-y: scroll;
 	}
 
 		#main:before {
@@ -810,7 +811,7 @@
 		height: 6em;
 		left: 0;
 		line-height: 8em;
-		position: absolute;
+		position: fixed;
 		text-align: center;
 		width: 100%;
 	}
