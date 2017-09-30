@@ -116,6 +116,7 @@
 
     .projects {
       position: absolute;
+      margin-bottom: 3em;
       left: -6%;
       width: 101vw;
       display: flex;
@@ -236,6 +237,35 @@
     }
 
     .project-right img:hover {
+      width: 135%;
+      height: 125%;
+      left: -17%;
+      top: -13%;
+      opacity: 0.3;
+    }
+
+    .project-fetch-source strong {
+      position: absolute;
+      top: 25%;
+      left: 11%;
+      font-size: 1.55em;
+    }
+
+    .project-fetch-source .description {
+      position: absolute;
+      top: 43%;
+      left: 5%;
+    }
+
+    .project-fetch-source img {
+      width: 150%;
+      height: 100%;
+      position: absolute;
+      left: -25%;
+      top: 0%;
+    }
+
+    .project-fetch-source img:hover {
       width: 135%;
       height: 125%;
       left: -17%;
