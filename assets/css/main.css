@@ -494,15 +494,6 @@
     overflow-y: scroll;
 	}
 
-		#main:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			margin-right: 0;
-			vertical-align: middle;
-			width: 1px;
-		}
-
 /* Header */
 
 	@-moz-keyframes header {
@@ -667,7 +658,7 @@
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -9em;
+		top: 3em;
 		vertical-align: middle;
 		width: 90%;
 	}
